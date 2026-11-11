@@ -1,0 +1,28 @@
+/* Жесткая защита под экраны смартфонов */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Manrope', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
+}
+
+.heading-font {
+    font-family: 'Unbounded', sans-serif;
+}
+
+/* Стиль стеклянных Bento-плиток */
+.bento-card {
+    background: rgba(16, 24, 32, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    transition: all 0.25s ease;
+}
+
+.bento-card:hover {
+    border-color: rgba(52, 211, 153, 0.4);
+    box-shadow: 0 10px 30px -10px rgba(16, 185, 129, 0.15);
+}
